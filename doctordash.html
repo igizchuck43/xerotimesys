@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Doctors</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <!-- <h2>XeroTime.</h2> -->
+                <img src="/img/xero2.png" alt="logo">
+            </div>
+            <div class="search">
+                <!-- <input type="text" name="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label> -->
+                <h2>Doctor Dashboard</h2>
+            </div>
+            <!-- <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/user.png" alt="">
+            </div> -->
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-doctor"></i>
+                        <div>Doctors</div>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user-nurse"></i>
+                        <div>Nurses</div>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hospital-user"></i>
+                        <div>Patients</div>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Analytics</div>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-prescription-bottle-medical"></i>
+                        <div>Pharmacy</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <div>Log out</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <!-- <div class="number">1217</div> -->
+                        <div class="add">Details</div>
+                        <div class="card-name">Doctors</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-doctor"></i>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="card-content">
+                        <div class="number">42</div>
+                        <div class="card-name">Nurses</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                </div> -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">68</div>
+                        <div class="card-name">Employees</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="card-content">
+                        <div class="number">$4500</div>
+                        <div class="card-name">Revenue</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-cash-register"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Doctor's Details</h2>
+                    <div>   
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+                <!-- <div class="chart doughnut-chart">
+                    <h2> </h2>
+                    <div>
+                        <canvas id="doughnut"></canvas>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+</body>
+</html>
